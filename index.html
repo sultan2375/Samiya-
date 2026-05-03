@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Call Service</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #050d1a;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 15px;
+    }
+
+    .card {
+      background: #071c2f;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #123;
+      margin: auto;
+      border: 3px solid #00ff88;
+    }
+
+    h2 {
+      margin: 15px 0 5px;
+    }
+
+    .status {
+      color: #00ff88;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .btn-blue {
+      background: #1b8dcf;
+      color: #fff;
+    }
+
+    .btn-green {
+      background: #1f9d4c;
+      color: #fff;
+    }
+
+    .btn-red {
+      background: red;
+      color: #fff;
+    }
+
+    .call-time {
+      font-size: 28px;
+      color: #00ff88;
+      margin: 10px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Top Card -->
+  <div class="card">
+    <div class="avatar"></div>
+    <h2>ভিডিও কল সার্ভিস</h2>
+    <div class="status">● Live Contact Active</div>
+  </div>
+
+  <!-- IMO -->
+  <div class="card">
+    <p>এটা আমার IMO 👇</p>
+    <a href="https://www.profitablecpmratenetwork.com/fgb99is44g?key=c43c8cdc5159bc8dd64cfd7dad4d73af" class="btn btn-blue">IMO তে যোগাযোগ</a>
+  </div>
+
+  <!-- WhatsApp -->
+  <div class="card">
+    <p>এটা আমার WhatsApp 👇</p>
+    <a href="https://www.profitablecpmratenetwork.com/ks6cegkp26?key=fb67da448d7ea4a193d12ce0109a8ee5" class="btn btn-green">WhatsApp এ যোগাযোগ</a>
+  </div>
+
+  <!-- Call Section -->
+  <div class="card">
+    <p>📞 Live Call চলছে</p>
+    <div class="call-time" id="timer">00:00</div>
+    <a href="https://www.profitablecpmratenetwork.com/gzyq8b1p?key=2c48b650f8d0f78c1ab48fe555929e1f" class="btn btn-red">কল করুন</a>
+  </div>
+
+</div>
+
+<script>
+  // Timer Script
+  let seconds = 0;
+  setInterval(() => {
+    seconds++;
+    let min = Math.floor(seconds / 60);
+    let sec = seconds % 60;
+
+    document.getElementById("timer").innerText =
+      (min < 10 ? "0" + min : min) + ":" +
+      (sec < 10 ? "0" + sec : sec);
+  }, 1000);
+</script>
+
+</body>
+</html>
